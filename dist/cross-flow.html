@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zern</title>
+
+    <link rel="preload" href="/fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/inter/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/fonts/inter/Inter-Black.woff2" as="font" type="font/woff2" crossorigin />
+
+
+<link rel="stylesheet" href="./cdn/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="./cdn/css/choices.min.css">
+<link rel="stylesheet" href="./css/header.css?v=1.0">
+<link rel="stylesheet" href="./css/components.css?v=1.1">
+</head>
+
+<body>
+    <div class="main" id="main">
+
+        <header>
+    <div class="container">
+        <a href="./home.html" class="logo">
+            <img src="./img/components/logo.svg" alt="Zern">
+        </a>
+        <div class="menu menu-main">
+            <div class="menu-top">
+                <a href="./home.html" class="menu-top__logo">
+                    <img src="./img/components/logo.svg" alt="Zern">
+                </a>
+                <div class="burger active js-burger">
+                    <div class="burger__content">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-search">
+                <div class="form-group text">
+                    <div class="form-group__input-wrapper">
+                        <input class="form-group__input" id="name" type="text" placeholder="Search">
+
+                        <i class="icon-search"></i>
+
+                        <button type="button" class="btn-clear">
+                            <i class="icon-x"></i>
+                        </button>
+                    </div>
+                    <div class="help-block">Required field</div>
+                </div>
+            </div>
+            <nav class="menu-content">
+                <ul>
+                    <li>
+                        <a href="" class="link">About us</a>
+                    </li>
+                    <li>
+                        <span class="link js-show-menu-products">
+                            Products
+                            <i class="icon-chevron-right"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="" class="link">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="" class="link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-footer">
+                <a href="" class="btn-primary">
+                    Zern Selector
+                    <i class="icon-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="menu menu-products">
+            <div class="menu-top">
+                <a href="./home.html" class="menu-top__logo">
+                    <img src="./img/components/logo.svg" alt="Zern">
+                </a>
+                <div class="burger active js-burger">
+                    <div class="burger__content">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <button type="button" class="js-btn-close-menu-products">
+                    <i class="icon-chevron-left"></i>
+                    <span>Products</span>
+                </button>
+            </div>
+            <div class="menu-content">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <picture>
+                                    <source srcset="./img/home/prod-1.webp" type="image/webp">
+                                    <source srcset="./img/home/prod-1.png" type="image/png">
+
+                                    <img src="./img/home/prod-1.png" alt="" loading="lazy">
+                                </picture>
+                            </div>
+                            <p class="name">
+                                Counter-flow heat exchangers
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <picture>
+                                    <source srcset="./img/home/prod-2.webp" type="image/webp">
+                                    <source srcset="./img/home/prod-2.png" type="image/png">
+
+                                    <img src="./img/home/prod-2.png" alt="" loading="lazy">
+                                </picture>
+                            </div>
+                            <p class="name">
+                                Cross-flow heat exchangers
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="img">
+                                <picture>
+                                    <source srcset="./img/home/prod-3.webp" type="image/webp">
+                                    <source srcset="./img/home/prod-3.png" type="image/png">
+
+                                    <img src="./img/home/prod-3.png" alt="" loading="lazy">
+                                </picture>
+                            </div>
+                            <p class="name">
+                                Rotary heat exchangers
+                            </p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="header-bar">
+            <div class="search js-search-btn">
+                <button type="button" class="btn-border">
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+
+            <div class="search-holder">
+                <div class="search-holder__wrapper">
+                    <form action="">
+                        <div class="form-group text">
+                            <div class="form-group__input-wrapper">
+                                <input class="form-group__input" id="name" type="text" placeholder="Search">
+
+                                <button type="button" class="btn-clear">
+                                    <i class="icon-x"></i>
+                                </button>
+
+                                <button type="submit" class="btn-submit">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </div>
+                            <div class="help-block">Required field</div>
+                        </div>
+                    </form>
+                    <button type="button" class="btn-close js-search-btn">
+                        <i class="icon-x"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="lang-switcher">
+                <span>
+                    EN
+                    <i class="icon-chevron-down"></i>
+                </span>
+                <ul class="lang-switcher__dropdown">
+                    <li>
+                        <a href="">
+                            UA
+                            <i class="icon-check"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            DE
+                            <i class="icon-check"></i>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="">
+                            EN
+                            <i class="icon-check"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="" class="btn-primary btn-header-link">
+                Zern Selector
+                <i class="icon-arrow-right"></i>
+            </a>
+            <div class="burger js-burger">
+                <div class="burger__content">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+<div class="header-overlay"></div>
+
+<!-- <div class="form-group text">
+    <label class="form-group__label" for="name">Name</label>
+    <div class="form-group__input-wrapper">
+        <input class="form-group__input" id="name" type="text" placeholder="Search">
+
+        <button type="button" class="btn-clear">
+            <i class="icon-x"></i>
+        </button>
+    </div>
+    <div class="help-block">Required field</div>
+</div> -->
+
+        <div class="calculate-page">
+            <section id="block-page-name">
+                <div class="container">
+                    <div class="content">
+                        <h1 class="title">Zern Selector</h1>
+                        <div class="description editor js-custom-editor">
+                            <p>
+                                Thank you for choosing ZERN ENGINEERING and welcome to our selector tool! ZERN
+                                ENGINEERING™
+                                by Blauberg Ventilatoren GmbH selector is a unique tool that helps our customers not
+                                only
+                                easily calculate parameters of a given heat exchanger, but also to find another product
+                                you
+                                need based on the parameters you provide. All data in the ZERN ENGINEERING selector is a
+                                result of hundreds of work hours spent by our specialists in the lab testing our
+                                products on
+                                the test benches. Therefore, our customers may use with confidence the results obtained
+                                in
+                                the course of use of the selector tool when calculating technical specification for
+                                their
+                                project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="calculate-products">
+                <div class="container">
+
+                    <div class="block-name">
+                        <p class="block-name__subtitle">calculate</p>
+                        <h2 class="block-name__title">Please choose the type of heat exchanger</h2>
+                    </div>
+
+                    <div class="list">
+                        <div class="card">
+                            <div class="form-group radio">
+                                <input id="product-1" type="radio" name="product" value="prod-1">
+                                <label for="product-1">
+                                    <p>Counter-flow</p>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/hero.png" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="form-group radio">
+                                <input id="product-2" type="radio" name="product" value="prod-2" checked>
+                                <label for="product-2">
+                                    <p>Cross-flow</p>
+                                    <div class="img">
+                                        <img src="./img/products/cross-flow/hero.png" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="form-group radio">
+                                <input id="product-3" type="radio" name="product" value="prod-3">
+                                <label for="product-3">
+                                    <p>Rotary </p>
+                                    <div class="img">
+                                        <img src="./img/products/rotary/hero.png" alt="">
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- add class "hide" to hide -->
+            <section class="specifications">
+                <div class="container">
+
+                    <div class="block-name">
+                        <p class="block-name__subtitle">Counter-flow</p>
+                        <h2 class="block-name__title">SPECIFICATIONS</h2>
+                    </div>
+
+                    <div class="content">
+                        <div class="images">
+                            <div class="img">
+                                <div class="img__wrapper">
+                                    <picture>
+                                        <source srcset="./img/products/cross-flow/img-1.webp" type="image/webp">
+                                        <source srcset="./img/products/cross-flow/img-1.png" type="image/png">
+                                        <img src="./img/products/cross-flow/img-1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="zoom-block js-zoom" data-src="./img/products/cross-flow/img-1.png">
+                                    <button type="button" class="btn-border zoom-block__btn">
+                                        <i class="icon-zoom-in"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <div class="img__wrapper">
+                                    <picture>
+                                        <source srcset="./img/products/cross-flow/img-2.webp" type="image/webp">
+                                        <source srcset="./img/products/cross-flow/img-2.png" type="image/png">
+                                        <img src="./img/products/cross-flow/img-2.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="zoom-block js-zoom" data-src="./img/products/cross-flow/img-2.png">
+                                    <button type="button" class="btn-border zoom-block__btn">
+                                        <i class="icon-zoom-in"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="calc">
+                            <div class="units">
+                                <div class="form-group radio">
+                                    <input id="unit-1" type="radio" name="units" value="m" checked>
+                                    <label for="unit-1">
+                                        <p>Metric units</p>
+                                    </label>
+                                </div>
+                                <div class="form-group radio">
+                                    <input id="unit-2" type="radio" name="units" value="i">
+                                    <label for="unit-2">
+                                        <p>Imperial units</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <h2 class="name">Polystyrene counter-flow heat exchanger <br> HU-EX6 366</h2>
+                                <div class="imgs">
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                    <div class="img">
+                                        <img src="./img/products/counter-flow/certificate.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-parameters">
+                                <div class="param-group horizontal">
+                                    <p class="label">
+                                        Mode
+                                        <span class="tooltip js-tooltip" data-content="tooltip-1" data-offset="0,10"
+                                            data-placement="bottom"></span>
+                                    </p>
+
+                                    <div class="tooltip-html-block" id="tooltip-1">
+                                        <strong>Enthalpie-Wärmetauscher</strong>
+                                        <p>
+                                            Auswahl aus Enthalpie-Wärmetauschern. Ein Enthalpie-Wärmetauscher gewinnt
+                                            sowohl die Wärme als auch die Feuchtigkeit aus der Abluft zurück.
+                                        </p>
+                                    </div>
+
+                                    <div class="param-group-input">
+                                        <div class="select-wrapper">
+                                            <select name="mode" id="select-mode" class="js-default-select">
+                                                <option value="1">Mode 1</option>
+                                                <option value="2">Mode 2</option>
+                                                <option value="3">Mode 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="param-group horizontal">
+                                    <p class="label">
+                                        Enthalpy
+                                        <span class="tooltip js-tooltip" data-text="Tooltip text" data-offset="0,10"
+                                            data-placement="bottom" data-desk-placement="right"></span>
+                                    </p>
+                                    <div class="param-group-input">
+                                        <div class="form-group switcher">
+                                            <input id="enthalpy" type="checkbox" name="enthalpy">
+                                            <label for="enthalpy">
+                                                <span class="switcher-elem"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="param-group horizontal">
+                                    <p class="label">
+                                        T-Profile
+                                        <span class="tooltip js-tooltip" data-text="Tooltip text" data-offset="0,10"
+                                            data-placement="bottom" data-desk-placement="right"></span>
+                                    </p>
+                                    <div class="param-group-input">
+                                        <div class="form-group switcher">
+                                            <input id="t-profile" type="checkbox" name="t-profile">
+                                            <label for="t-profile">
+                                                <span class="switcher-elem"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="param-group horizontal">
+                                    <p class="label">
+                                        Model
+                                        <span class="tooltip js-tooltip" data-text="Tooltip text" data-offset="0,10"
+                                            data-placement="bottom" data-desk-placement="right"></span>
+                                    </p>
+                                    <div class="param-group-input">
+                                        <div class="select-wrapper">
+                                            <select name="model" id="select-model" class="js-default-select">
+                                                <option value="1">Model 1</option>
+                                                <option value="2">Model 2</option>
+                                                <option value="3">Model 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="param-group horizontal">
+                                    <p class="label">
+                                        Depth - h
+                                        <span class="tooltip js-tooltip" data-text="Tooltip text" data-offset="0,10"
+                                            data-placement="bottom" data-desk-placement="right"></span>
+                                    </p>
+                                    <div class="param-group-input">
+                                        <div class="form-group text has-sub-placeholder has-error">
+                                            <div class="form-group__input-wrapper">
+                                                <input class="form-group__input" id="depth-h" type="text"
+                                                    placeholder="Depth - h">
+
+                                                <div class="sub-placeholder">
+                                                    mm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="param-group horizontal">
+                                    <p class="label">
+                                        Plate distance
+                                        <span class="tooltip js-tooltip" data-text="Tooltip text" data-offset="0,10"
+                                            data-placement="bottom" data-desk-placement="right"></span>
+                                    </p>
+                                    <div class="param-group-input">
+                                        <div class="form-group text has-sub-placeholder">
+                                            <div class="form-group__input-wrapper">
+                                                <input class="form-group__input" id="plate-distance" type="text"
+                                                    placeholder="Plate distance" readonly>
+
+                                                <div class="sub-placeholder">
+                                                    mm
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="param-group horizontal">
+                                    <p class="label">
+                                        Casing
+                                        <span class="tooltip js-tooltip" data-text="Tooltip text" data-offset="0,10"
+                                            data-placement="bottom" data-desk-placement="right"></span>
+                                    </p>
+                                    <div class="param-group-input">
+                                        <div class="select-wrapper">
+                                            <select name="casing" id="select-casing" class="js-default-select">
+                                                <option value="1">casing 1</option>
+                                                <option value="2">casing 2</option>
+                                                <option value="3">casing 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="temperature-parameters">
+                                <!-- add class "disabled" to disable -->
+                                <div class="heating">
+                                    <div class="temperature-head">
+                                        <p>
+                                            <i class="icon-thermometer-sun"></i>
+                                            Heating
+                                        </p>
+                                        <p>Supply</p>
+                                        <p>Exhaust</p>
+                                    </div>
+
+                                    <div class="rows">
+                                        <div class="row">
+                                            <p class="label">
+                                                Standard air flow
+                                                <span class="tooltip js-tooltip" data-text="Tooltip text"
+                                                    data-offset="0,10" data-placement="bottom"
+                                                    data-desk-placement="right"></span>
+                                            </p>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Supply</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="supply-1" type="text"
+                                                            placeholder="Supply">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">m<sup>3</sup>/h</p>
+                                            </div>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Exhaust</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="exhaust-2" type="text"
+                                                            placeholder="Exhaust">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">m<sup>3</sup>/h</p>
+                                            </div>
+
+                                            <p class="label-units">m<sup>3</sup>/h</p>
+                                        </div>
+
+                                        <div class="row">
+                                            <p class="label">
+                                                Temperature IN
+                                                <span class="tooltip js-tooltip" data-text="Tooltip text"
+                                                    data-offset="0,10" data-placement="bottom"
+                                                    data-desk-placement="right"></span>
+                                            </p>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Supply</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="supply-3" type="text"
+                                                            placeholder="Supply">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">°C</p>
+                                            </div>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Exhaust</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="exhaust-4" type="text"
+                                                            placeholder="Exhaust">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">°C</p>
+                                            </div>
+
+                                            <p class="label-units">°C</p>
+                                        </div>
+
+                                        <div class="row">
+                                            <p class="label">
+                                                Relative humidity IN
+                                                <span class="tooltip js-tooltip" data-text="Tooltip text"
+                                                    data-offset="0,10" data-placement="bottom"
+                                                    data-desk-placement="right"></span>
+                                            </p>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Supply</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="supply-5" type="text"
+                                                            placeholder="Supply">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">%</p>
+                                            </div>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Exhaust</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="exhaust-6" type="text"
+                                                            placeholder="Exhaust">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">%</p>
+                                            </div>
+
+                                            <p class="label-units">%</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- add class "disabled" to disable -->
+                                <div class="cooling disabled">
+                                    <div class="temperature-head">
+                                        <p>
+                                            <i class="icon-thermometer-snowflake"></i>
+                                            Cooling
+                                        </p>
+                                        <p>Supply</p>
+                                        <p>Exhaust</p>
+                                    </div>
+
+                                    <div class="rows">
+                                        <div class="row">
+                                            <p class="label">
+                                                Standard air flow
+                                                <span class="tooltip js-tooltip" data-text="Tooltip text"
+                                                    data-offset="0,10" data-placement="bottom"
+                                                    data-desk-placement="right"></span>
+                                            </p>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Supply</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="supply-1" type="text"
+                                                            placeholder="Supply">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">m<sup>3</sup>/h</p>
+                                            </div>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Exhaust</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="exhaust-2" type="text"
+                                                            placeholder="Exhaust">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">m<sup>3</sup>/h</p>
+                                            </div>
+
+                                            <p class="label-units">m<sup>3</sup>/h</p>
+                                        </div>
+
+                                        <div class="row">
+                                            <p class="label">
+                                                Temperature IN
+                                                <span class="tooltip js-tooltip" data-text="Tooltip text"
+                                                    data-offset="0,10" data-placement="bottom"
+                                                    data-desk-placement="right"></span>
+                                            </p>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Supply</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="supply-3" type="text"
+                                                            placeholder="Supply">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">°C</p>
+                                            </div>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Exhaust</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="exhaust-4" type="text"
+                                                            placeholder="Exhaust">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">°C</p>
+                                            </div>
+
+                                            <p class="label-units">°C</p>
+                                        </div>
+
+                                        <div class="row">
+                                            <p class="label">
+                                                Relative humidity IN
+                                                <span class="tooltip js-tooltip" data-text="Tooltip text"
+                                                    data-offset="0,10" data-placement="bottom"
+                                                    data-desk-placement="right"></span>
+                                            </p>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Supply</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="supply-5" type="text"
+                                                            placeholder="Supply">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">%</p>
+                                            </div>
+
+                                            <div class="form-group-wrapper">
+                                                <p class="label">Exhaust</p>
+                                                <div class="form-group text">
+                                                    <div class="form-group__input-wrapper">
+                                                        <input class="form-group__input" id="exhaust-6" type="text"
+                                                            placeholder="Exhaust">
+                                                    </div>
+                                                </div>
+                                                <p class="label-units">%</p>
+                                            </div>
+
+                                            <p class="label-units">%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result">
+                                <div class="result-head">
+                                    <p>Parameter</p>
+                                    <p>
+                                        <i class="icon-thermometer-sun"></i>
+                                        <span>Heating</span>
+                                    </p>
+                                    <p class="disabled">
+                                        <i class="icon-thermometer-snowflake"></i>
+                                        <span>Cooling</span>
+                                    </p>
+                                </div>
+                                <div class="result-body">
+                                    <div class="body-row">
+                                        <p>Air pressure drop</p>
+                                        <p>49.21 Pa</p>
+                                        <p class="disabled">53.95 Pa</p>
+                                    </div>
+                                    <div class="body-row">
+                                        <p>Temperature efficiency</p>
+                                        <p>86.5 %</p>
+                                        <p class="disabled">86.25 %</p>
+                                    </div>
+                                    <div class="body-row">
+                                        <p>Heat recovery</p>
+                                        <p>3.9 kW</p>
+                                        <p class="disabled">-2.42 kW</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- add class "hide" to hide -->
+                            <div class="error-block hide">
+                                <ul>
+                                    <li><strong>Depth - h</strong> - Heat exchanger air velocity too low</li>
+                                    <li><strong>Standard air flow</strong> - Heat exchanger air velocity high</li>
+                                    <li><strong>Temperature IN Supply</strong> -The winter temperature in supply may not
+                                        be greater than 60.</li>
+                                    <li><strong>Relative humidity IN Supply</strong> - The winter relative humidity in
+                                        supply may not be greater than 100.</li>
+                                </ul>
+                            </div>
+                            <div class="btn-wrapper">
+                                <button class="btn-primary">
+                                    Results
+                                    <i class="icon-arrow-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- add class "hide" to hide -->
+            <section class="calculate-result">
+                <div class="container">
+                    <div class="product">
+                        <div class="img_wrapper">
+                            <div class="img">
+                                <picture>
+                                    <source srcset="./img/products/cross-flow/img-2.webp" type="image/webp">
+                                    <source srcset="./img/products/cross-flow/img-2.png" type="image/png">
+                                    <img src="./img/products/cross-flow/img-2.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="block-name">
+                                <p class="block-name__subtitle">ZERN HU-EX6 366/200-2.1</p>
+                                <h2 class="block-name__title">
+                                    Polystyrene counter-flow heat exchanger <br> HU-EX6 366
+                                </h2>
+                            </div>
+
+                            <div class="imgs">
+                                <div class="img">
+                                    <img src="./img/products/counter-flow/certificate.png" alt="">
+                                </div>
+                                <div class="img">
+                                    <img src="./img/products/counter-flow/certificate.png" alt="">
+                                </div>
+                                <div class="img">
+                                    <img src="./img/products/counter-flow/certificate.png" alt="">
+                                </div>
+                                <div class="img">
+                                    <img src="./img/products/counter-flow/certificate.png" alt="">
+                                </div>
+                                <div class="img">
+                                    <img src="./img/products/counter-flow/certificate.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="editor js-custom-editor">
+                                <p>
+                                    The HU-EX6 counter-flow heat exchangers are specifically developed for heat recovery
+                                    in
+                                    balanced ventilation systems. These heat exchangers allow efficient use of extracted
+                                    air
+                                    energy for heating or cooling, thus optimizing ventilation and providing a healthy
+                                    indoor climate.
+                                </p>
+                                <p>
+                                    Due to the unique heat exchanger design and the shape of the heat exchanging plates,
+                                    the
+                                    heat exchange surface is maximized and the pressure losses are minimized. This heat
+                                    exchanger type is compatible nearly with all ventilation systems.
+                                </p>
+                                <p>
+                                    The supply and extract air streams move in opposite directions toward each other.
+                                    The
+                                    heat energy is transferred through the thin plates.
+                                </p>
+                                <p>
+                                    <strong>Heat recovery efficiency</strong> exceeds 90 %.
+                                </p>
+                                <p>
+                                    <strong>Maximum depth:</strong> 600 mm
+                                </p>
+                            </div>
+                        </div>
+
+                        <table style="--columns: 4" class="adaptive-in-mob">
+                            <thead>
+                                <tr>
+                                    <th>SKU</th>
+                                    <th>Quantity</th>
+                                    <th>Depth - h</th>
+                                    <th>Total depth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Hp-EX4 300/200/3.0-2.1</td>
+                                    <td>
+                                        <span class="name">Quantity</span>
+                                        1
+                                    </td>
+                                    <td>
+                                        <span class="name">Depth - h</span>
+                                        200 mm
+                                    </td>
+                                    <td>
+                                        <span class="name">Total depth</span>
+                                        200 mm
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="table-result">
+                        <div class="top">
+                            <p class="title">Calculations</p>
+                            <div class="radio-list">
+                                <div class="form-group radio">
+                                    <input id="short-list" type="radio" name="list-type" checked>
+                                    <label for="short-list">
+                                        <p>Short list</p>
+                                    </label>
+                                </div>
+                                <div class="form-group radio">
+                                    <input id="wide-list" type="radio" name="list-type">
+                                    <label for="wide-list">
+                                        <p>Wide list</p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Parameter
+                                    </th>
+                                    <th class="heating">
+                                        <table>
+                                            <tr>
+                                                <td colspan="2">Heating</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Supply</td>
+                                                <td>Exhaust</td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Standard air flow, m3/h
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    100
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    200
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Temperature IN, °C
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    7
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    20
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Relative humidity IN, %
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    75
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    37
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Temperature OUT, °C
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    18.22
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    8.78
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Relative humidity OUT, %
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    35.38
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    76.38
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Face air velocity, m/s
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    1.81
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    1.9
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="highlight">
+                                    <td>
+                                        Air pressure drop, Pa
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    185.49
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    199.11
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr class="highlight-dark">
+                                    <td>
+                                        Temperature efficiency, %
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    86.29
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    86.29
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Heat recovery, kW
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    0.96
+                                                </td>
+                                                <td>
+                                                    <span class="name">Exhaust</span>
+                                                    -0.96
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Condensation, kg/h
+                                    </td>
+                                    <td class="heating">
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <span class="name">Supply</span>
+                                                    0
+                                                </td>
+                                                
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="charts">
+                        <p class="title">Charts</p>
+                        <div class="charts-group heating">
+                            <p class="charts-group__title">
+                                <i class="icon-thermometer-sun"></i>
+                                Heating
+                            </p>
+                            <div class="images">
+                                <div class="img">
+                                    <picture>
+                                        <source srcset="./img/products/counter-flow/chart-1.webp" type="image/webp">
+                                        <source srcset="./img/products/counter-flow/chart-1.png" type="image/png">
+                                        <img src="./img/products/counter-flow/chart-1.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="img">
+                                    <picture>
+                                        <source srcset="./img/products/counter-flow/chart-2.webp" type="image/webp">
+                                        <source srcset="./img/products/counter-flow/chart-2.png" type="image/png">
+                                        <img src="./img/products/counter-flow/chart-2.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- add class "hide" to hide -->
+            <section class="calculate-footer">
+                <div class="container">
+                    <div class="footer-top">
+                        <a href="" class="logo">
+                            <img src="./img/components/logo.svg" alt="" loading="lazy">
+                        </a>
+                        <div class="btns">
+                            <a href="" class="btn-border">
+                                <i class="icon-eye"></i>
+                                View PDF
+                            </a>
+                            <a href="" class="btn-border">
+                                <i class="icon-download"></i>
+                                Download PDF
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <ul>
+                            <li>
+                                <a href="tel:+49 89 785 08 088">
+                                    <i class="icon-phone"></i>
+                                    +49 89 785 08 088 (multichannel)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+49 89 780 69 521">
+                                    <i class="icon-printer"></i>
+                                    +49 89 780 69 521 (fax)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:sales@zern-engineering.com">
+                                    <i class="icon-map-pin"></i>
+                                    sales@zern-engineering.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+    <div class="container">
+        <div class="footer-top">
+            <a href="" class="logo">
+                <img src="./img/components/logo.svg" alt="" loading="lazy">
+            </a>
+            <ul>
+                <li>
+                    <a href="mailto:sales@zern-engineering.com">sales@zern-engineering.com</a>
+                </li>
+                <li>
+                    <a href="tel:+49 89 785 08 088">+49 89 785 08 088 (multichannel)</a>
+                </li>
+                <li>
+                    <span>Stäblistraße 6, 81477, München, Germany</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-cols">
+            <div class="footer-col">
+                <p class="footer-col__title">Products</p>
+                <ul>
+                    <li>
+                        <a href="">Counter-flow heat exchangers</a>
+                    </li>
+                    <li>
+                        <a href="">Cross-flow heat exchangers</a>
+                    </li>
+                    <li>
+                        <a href="">Rotary heat exchangers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <p class="footer-col__title">Zern Engineering</p>
+                <ul>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li>
+                        <a href="">Documentation</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                    <li>
+                        <a href="">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col sn">
+                <p class="footer-col__title">follow us</p>
+                <ul>
+                    <li>
+                        <a href="">
+                            <button class="btn-border">
+                                <i class="linkedin"></i>
+                            </button>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button class="btn-border">
+                                <i class="fb"></i>
+                            </button>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <button class="btn-border">
+                                <i class="yt"></i>
+                            </button>
+                            <span>Youtube</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="text">
+                © ZERN ENGINEERING. 2017-2025. All rights reserved
+            </p>
+            <ul>
+                <li>
+                    <a href="">Imprint</a>
+                </li>
+                <li>
+                    <a href="">Privacy policy</a>
+                </li>
+                <li>
+                    <a href="">Cookie settings</a>
+                </li>
+            </ul>
+            <div class="created_at">
+                Створено
+                <a href="https://uaitlab.com/" target="_blank" rel="nofollow">
+                    <svg width="82" height="20" viewBox="0 0 82 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_3964_34040)">
+                            <path
+                                d="M34.8384 16.4983H32.4765C32.3944 16.4983 32.3157 16.466 32.2577 16.4085C32.1996 16.3511 32.167 16.2731 32.167 16.1918V7.0265C32.1668 6.97259 32.1809 6.91958 32.208 6.87281C32.2351 6.82604 32.2741 6.78717 32.3212 6.76012C32.3683 6.73307 32.4218 6.7188 32.4762 6.71875C32.5307 6.7187 32.5842 6.73286 32.6313 6.75982L34.9932 8.11162C35.0405 8.13863 35.0796 8.17752 35.1068 8.22435C35.134 8.27118 35.1482 8.32429 35.148 8.3783V16.1918C35.148 16.2731 35.1154 16.3511 35.0573 16.4085C34.9993 16.466 34.9205 16.4983 34.8384 16.4983Z"
+                                fill="#1E1E1F"
+                                style="fill:#1E1E1F;fill:color(display-p3 0.1176 0.1176 0.1216);fill-opacity:1;" />
+                            <path
+                                d="M33.4953 3.50002H35.8572C35.9393 3.50002 36.018 3.53231 36.076 3.5898C36.1341 3.64728 36.1667 3.72525 36.1667 3.80655V12.9718C36.1673 13.0262 36.1532 13.0797 36.1259 13.1269C36.0987 13.1741 36.0593 13.2133 36.0117 13.2405C35.9641 13.2676 35.9101 13.2817 35.8552 13.2814C35.8003 13.281 35.7465 13.2662 35.6993 13.2385L33.3374 11.8898C33.2902 11.8628 33.251 11.8239 33.2238 11.7771C33.1966 11.7302 33.1824 11.6771 33.1826 11.6231V3.80655C33.1826 3.76603 33.1907 3.72592 33.2065 3.68853C33.2222 3.65114 33.2453 3.61721 33.2744 3.58871C33.3035 3.5602 33.3379 3.53769 33.3759 3.52246C33.4138 3.50724 33.4544 3.49961 33.4953 3.50002Z"
+                                fill="#F58634"
+                                style="fill:#F58634;fill:color(display-p3 0.9608 0.5255 0.2039);fill-opacity:1;" />
+                            <path
+                                d="M34.9893 8.11309L33.1846 7.08008V11.6229C33.1844 11.6769 33.1986 11.73 33.2257 11.7768C33.2529 11.8237 33.2921 11.8625 33.3393 11.8896L35.1471 12.9226V8.37977C35.147 8.32545 35.1324 8.27214 35.1046 8.22528C35.0769 8.17842 35.0371 8.1397 34.9893 8.11309Z"
+                                fill="#B93A38"
+                                style="fill:#B93A38;fill:color(display-p3 0.7255 0.2275 0.2196);fill-opacity:1;" />
+                            <path
+                                d="M11.0029 16.5002C10.6772 16.5053 10.354 16.4437 10.0535 16.3192C9.75309 16.1947 9.48189 16.01 9.25697 15.7768C9.02388 15.5541 8.83893 15.2868 8.71334 14.9912C8.58776 14.6956 8.52417 14.3778 8.52643 14.0571V7.02528C8.52643 6.94398 8.55904 6.86602 8.61709 6.80853C8.67514 6.75104 8.75388 6.71875 8.83598 6.71875H10.8264C10.9085 6.71875 10.9872 6.75104 11.0453 6.80853C11.1033 6.86602 11.136 6.94398 11.136 7.02528V13.6157C11.136 13.697 11.1686 13.775 11.2266 13.8325C11.2847 13.8899 11.3634 13.9222 11.4455 13.9222H15.6276C15.7097 13.9222 15.7884 13.8899 15.8465 13.8325C15.9045 13.775 15.9371 13.697 15.9371 13.6157V7.03448C15.9371 6.95318 15.9697 6.87521 16.0278 6.81773C16.0859 6.76024 16.1646 6.72795 16.2467 6.72795H18.2278C18.2685 6.72795 18.3087 6.73587 18.3463 6.75128C18.3838 6.76668 18.418 6.78926 18.4467 6.81773C18.4755 6.84619 18.4983 6.87998 18.5138 6.91717C18.5294 6.95436 18.5374 6.99422 18.5374 7.03448V14.0571C18.5404 14.3774 18.4778 14.6949 18.3533 14.9905C18.2288 15.2861 18.045 15.5536 17.813 15.7768C17.5881 16.01 17.3169 16.1947 17.0165 16.3192C16.716 16.4437 16.3928 16.5053 16.0671 16.5002H11.0029Z"
+                                fill="#1E1E1F"
+                                style="fill:#1E1E1F;fill:color(display-p3 0.1176 0.1176 0.1216);fill-opacity:1;" />
+                            <path
+                                d="M22.813 16.5002C22.4878 16.5056 22.1649 16.4441 21.8649 16.3196C21.5649 16.1951 21.2943 16.0102 21.0702 15.7768C20.8383 15.5536 20.6544 15.2861 20.5299 14.9905C20.4054 14.6949 20.3428 14.3774 20.3459 14.0571V10.627C20.3459 10.5457 20.3785 10.4678 20.4365 10.4103C20.4946 10.3528 20.5733 10.3205 20.6554 10.3205H27.7411V9.60628C27.7411 9.52498 27.7085 9.44701 27.6504 9.38953C27.5924 9.33204 27.5136 9.29974 27.4315 9.29974H20.6523C20.5702 9.29974 20.4915 9.26745 20.4334 9.20996C20.3754 9.15248 20.3428 9.07451 20.3428 8.99321V7.02528C20.3428 6.94398 20.3754 6.86602 20.4334 6.80853C20.4915 6.75104 20.5702 6.71875 20.6523 6.71875H27.8897C28.5465 6.71875 29.1764 6.97711 29.6408 7.437C30.1052 7.89688 30.3661 8.52062 30.3661 9.171V16.1967C30.3661 16.278 30.3335 16.356 30.2755 16.4135C30.2174 16.4709 30.1387 16.5032 30.0566 16.5032L22.813 16.5002ZM27.4563 13.9222C27.5384 13.9222 27.6171 13.8899 27.6752 13.8325C27.7333 13.775 27.7659 13.697 27.7659 13.6157V12.5827H23.2711C23.1891 12.5827 23.1103 12.615 23.0523 12.6725C22.9942 12.73 22.9616 12.8079 22.9616 12.8892V13.6157C22.9616 13.697 22.9942 13.775 23.0523 13.8325C23.1103 13.8899 23.1891 13.9222 23.2711 13.9222H27.4563Z"
+                                fill="#1E1E1F"
+                                style="fill:#1E1E1F;fill:color(display-p3 0.1176 0.1176 0.1216);fill-opacity:1;" />
+                            <path
+                                d="M40.4598 16.5C39.8045 16.4952 39.1775 16.2353 38.7141 15.7764C38.2507 15.3176 37.9883 14.6966 37.9834 14.0477V3.80653C37.9834 3.72523 38.016 3.64727 38.0741 3.58978C38.1321 3.53229 38.2109 3.5 38.293 3.5H40.2803C40.3624 3.5 40.4411 3.53229 40.4992 3.58978C40.5572 3.64727 40.5898 3.72523 40.5898 3.80653V6.71245H43.9392C44.0213 6.71245 44.1 6.74474 44.1581 6.80223C44.2161 6.85972 44.2488 6.93768 44.2488 7.01898V8.99304C44.2488 9.07434 44.2161 9.15231 44.1581 9.20979C44.1 9.26728 44.0213 9.29958 43.9392 9.29958H40.5867V13.6155C40.5867 13.6968 40.6194 13.7748 40.6774 13.8323C40.7355 13.8898 40.8142 13.9221 40.8963 13.9221H43.9392C44.0213 13.9221 44.1 13.9544 44.1581 14.0119C44.2161 14.0693 44.2488 14.1473 44.2488 14.2286V16.1965C44.2488 16.2778 44.2161 16.3558 44.1581 16.4133C44.1 16.4708 44.0213 16.5031 43.9392 16.5031L40.4598 16.5Z"
+                                fill="#1E1E1F"
+                                style="fill:#1E1E1F;fill:color(display-p3 0.1176 0.1176 0.1216);fill-opacity:1;" />
+                            <path
+                                d="M48.0868 16.5C47.4315 16.4952 46.8044 16.2353 46.3411 15.7764C45.8777 15.3176 45.6152 14.6966 45.6104 14.0477V3.80653C45.6104 3.72523 45.643 3.64727 45.701 3.58978C45.7591 3.53229 45.8378 3.5 45.9199 3.5H47.9289C48.011 3.5 48.0897 3.53229 48.1478 3.58978C48.2059 3.64727 48.2385 3.72523 48.2385 3.80653V13.6155C48.2385 13.6968 48.2711 13.7748 48.3291 13.8323C48.3872 13.8898 48.4659 13.9221 48.548 13.9221H49.9317C50.0138 13.9221 50.0926 13.9544 50.1506 14.0119C50.2087 14.0693 50.2413 14.1473 50.2413 14.2286V16.2057C50.2413 16.287 50.2087 16.365 50.1506 16.4225C50.0926 16.48 50.0138 16.5123 49.9317 16.5123L48.0868 16.5Z"
+                                fill="#1E1E1F"
+                                style="fill:#1E1E1F;fill:color(display-p3 0.1176 0.1176 0.1216);fill-opacity:1;" />
+                            <path
+                                d="M53.7001 16.4991C53.3744 16.5042 53.0512 16.4426 52.7507 16.3181C52.4503 16.1936 52.1791 16.0089 51.9542 15.7756C51.725 15.5512 51.5441 15.2831 51.4222 14.9876C51.3004 14.692 51.2402 14.3752 51.2453 14.056V10.6167C51.2453 10.5354 51.2779 10.4575 51.336 10.4C51.394 10.3425 51.4728 10.3102 51.5549 10.3102H58.6529V9.6021C58.6529 9.5208 58.6203 9.44284 58.5622 9.38535C58.5042 9.32786 58.4255 9.29557 58.3434 9.29557H51.5332C51.4511 9.29557 51.3724 9.26327 51.3143 9.20579C51.2563 9.1483 51.2236 9.07033 51.2236 8.98904V7.02723C51.2236 6.94594 51.2563 6.86797 51.3143 6.81049C51.3724 6.753 51.4511 6.7207 51.5332 6.7207H58.7705C59.4273 6.7207 60.0572 6.97907 60.5216 7.43895C60.9861 7.89884 61.247 8.52258 61.247 9.17296V16.2232C61.247 16.3045 61.2144 16.3824 61.1563 16.4399C61.0982 16.4974 61.0195 16.5297 60.9374 16.5297L53.7001 16.4991ZM58.3434 13.9211C58.4255 13.9211 58.5042 13.8888 58.5622 13.8313C58.6203 13.7739 58.6529 13.6959 58.6529 13.6146V12.5724H54.1458C54.0637 12.5724 53.985 12.6047 53.9269 12.6622C53.8689 12.7197 53.8363 12.7976 53.8363 12.8789V13.6146C53.8363 13.6959 53.8689 13.7739 53.9269 13.8313C53.985 13.8888 54.0637 13.9211 54.1458 13.9211H58.3434Z"
+                                fill="#1E1E1F"
+                                style="fill:#1E1E1F;fill:color(display-p3 0.1176 0.1176 0.1216);fill-opacity:1;" />
+                            <path
+                                d="M63.0479 16.1965V3.80653C63.0479 3.72523 63.0805 3.64727 63.1385 3.58978C63.1966 3.53229 63.2753 3.5 63.3574 3.5H65.3509C65.433 3.5 65.5118 3.53229 65.5698 3.58978C65.6279 3.64727 65.6605 3.72523 65.6605 3.80653V6.70632H70.5917C71.2485 6.70632 71.8784 6.96468 72.3428 7.42457C72.8072 7.88445 73.0681 8.50819 73.0681 9.15857V14.0631C73.0712 14.3833 73.0086 14.7009 72.884 14.9965C72.7595 15.2921 72.5757 15.5595 72.3438 15.7827C72.1188 16.016 71.8476 16.2007 71.5472 16.3252C71.2467 16.4497 70.9235 16.5113 70.5979 16.5061H63.3574C63.3165 16.5061 63.276 16.4981 63.2382 16.4825C63.2005 16.4669 63.1662 16.4441 63.1374 16.4153C63.1086 16.3865 63.0859 16.3523 63.0705 16.3148C63.0552 16.2772 63.0475 16.237 63.0479 16.1965ZM70.1676 13.9221C70.2497 13.9221 70.3284 13.8898 70.3865 13.8323C70.4445 13.7748 70.4772 13.6968 70.4772 13.6155V9.60917C70.4772 9.52788 70.4445 9.44991 70.3865 9.39242C70.3284 9.33494 70.2497 9.30264 70.1676 9.30264H65.6543V13.6155C65.6543 13.6968 65.6869 13.7748 65.745 13.8323C65.803 13.8898 65.8818 13.9221 65.9639 13.9221H70.1676Z"
+                                fill="#1E1E1F"
+                                style="fill:#1E1E1F;fill:color(display-p3 0.1176 0.1176 0.1216);fill-opacity:1;" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_3964_34040">
+                                <rect width="64.5357" height="13" fill="white" style="fill:white;fill-opacity:1;"
+                                    transform="translate(8.52637 3.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+
+            <button type="button" class="btn-scroll-top _js-scroll-top">
+                <i class="icon-arrow-up"></i>
+            </button>
+        </div>
+    </div>
+</footer>
+    </div>
+
+
+    <div class="modal-overlay"></div>
+    <div class="modal modal-zoom js-modal js-zoom-modal">
+        <button type="button" class="btn-close js-modal-close">
+            <i class="icon-x"></i>
+        </button>
+        <div class="modal-content">
+            <img src="" alt="">
+        </div>
+    </div>
+
+
+
+    <!-- <script src="./cdn/js/intlTelInput.min.js" defer id="intl-tel"></script> -->
+<!-- <script src="./cdn/js/maskinput.js" defer id="maskinput-script"></script> -->
+<script src="./cdn/js/popper.min.js" defer id="popper-script"></script>
+<script src="./cdn/js/tippy.min.js" defer id="tippy-script"></script>
+<script src="./cdn/js/choices.min.js"></script>
+<script src="./js/components.js?v=1.0"></script>
+</body>
+
+</html>
