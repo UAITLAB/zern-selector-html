@@ -15,8 +15,8 @@
 
 <link rel="stylesheet" href="./cdn/css/bootstrap-grid.min.css">
 <link rel="stylesheet" href="./cdn/css/choices.min.css">
-<link rel="stylesheet" href="./css/header.css?v=1.0">
-<link rel="stylesheet" href="./css/components.css?v=1.1">
+<link rel="stylesheet" href="./css/header.css?v=1.2">
+<link rel="stylesheet" href="./css/components.css?v=1.2">
 </head>
 
 <body>
@@ -1218,7 +1218,113 @@
             </section>
         </div>
 
-        <footer>
+        <div class="modal modal-cookies js-modal js-modal-cookies">
+    <div class="modal-head">
+        <p class="modal-title">Cookie settings</p>
+        <button type="button" class="btn-close js-modal-close">
+            <i class="icon-x"></i>
+        </button>
+    </div>
+    <div class="modal-content">
+        <div class="cookies-list">
+            <div class="cookies-item">
+                <div class="cookies-item__top">
+                    <p>Essential website cookies</p>
+                    <p class="green">
+                        Always on
+                    </p>
+                </div>
+                <div class="cookies-item__content">
+                    Necessary cookies help make a website usable by enabling basic functions like page navigation and
+                    access to secure areas
+                    of the website. The website cannot function properly without these cookies.
+                </div>
+            </div>
+            <div class="cookies-item">
+                <div class="cookies-item__top">
+                    <p>Performance cookies</p>
+                    <div class="form-group switcher">
+                        <input id="performance-cookies" type="checkbox" name="performance-cookies">
+                        <label for="performance-cookies">
+                            <span class="switcher-elem"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookies-item__content">
+                    These cookies are used to enhance the performance and functionality of our websites but are
+                    non-essential to their use.
+                    For example it stores your preferred language or the region that you are in.
+                </div>
+            </div>
+            <div class="cookies-item">
+                <div class="cookies-item__top">
+                    <p>Analytics cookies</p>
+                    <div class="form-group switcher">
+                        <input id="analytics-cookies" type="checkbox" name="analytics-cookies">
+                        <label for="analytics-cookies">
+                            <span class="switcher-elem"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookies-item__content">
+                    We use analytics cookies to help us measure how users interact with website content, which helps us
+                    customize our
+                    websites and application for you in order to enhance your experience.
+                </div>
+            </div>
+            <div class="cookies-item">
+                <div class="cookies-item__top">
+                    <p>Marketing cookies</p>
+                    <div class="form-group switcher">
+                        <input id="marketing-cookies" type="checkbox" name="marketing-cookies">
+                        <label for="marketing-cookies">
+                            <span class="switcher-elem"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="cookies-item__content">
+                    These cookies are used to make advertising messages more relevant to you and your interests. The
+                    intention is to display
+                    ads that are relevant and engaging for the individual user and thereby more valuable for publishers
+                    and third party
+                    advertisers.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="">Our privacy policy statement</a>
+        <button type="button" class="btn btn-primary btn-accept-all js-accept-all">
+            <span>Save settings</span>
+            <i class="icon-arrow-right"></i>
+        </button>
+    </div>
+</div>
+
+<div class="cookies-fixed active">
+    <div class="text">
+        <i class="icon-cookie"></i>
+        <div class="text-content">
+            <p>
+                Ми використовуємо файли cookies для того, щоб запропонувати Вам кращу навігацію сайтом, персоналізувати
+                контент та додатки, надати можливості для блогів та соціальних медіа, провести аналіз нашого трафіку.
+                Натисніть на «Налаштування cookies» для того, щоб прочитати про те, як ми використовуємо cookies та у
+                який спосіб Ви можете їх контролювати. Продовжуючи навігацію цим сайтом, ви погоджуєтеся на використання
+                нами файлів cookies.
+            </p>
+        </div>
+    </div>
+    <div class="btns">
+        <a href="" class="btn-underline js-show-modal" data-modal="cookies">
+            Наша політика конфіденційності
+        </a>
+        <button type="button" class="btn btn-border">
+            Прийняти всі файли cookies
+        </button>
+    </div>
+</div>
+
+<footer>
     <div class="container">
         <div class="footer-top">
             <a href="" class="logo">
@@ -1391,7 +1497,7 @@
 <script src="./cdn/js/popper.min.js" defer id="popper-script"></script>
 <script src="./cdn/js/tippy.min.js" defer id="tippy-script"></script>
 <script src="./cdn/js/choices.min.js"></script>
-<script src="./js/components.js?v=1.0"></script>
+<script src="./js/components.js?v=1.1"></script>
 </body>
 
 </html>
